@@ -1,14 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, useSearchParams } from "react-router-dom";
-import App from "./Valentines-Card";
+import ReactDOM from "react-dom/client"; // This is how you should import for React 18
+import App from "./App"; // Your main App component
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-    </Routes>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
 
