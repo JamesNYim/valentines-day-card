@@ -20,7 +20,7 @@ function ValentinesCard() {
 
   return (
     <div className="valentine-container">
-      <h1>Will you be {name}'s Valentine? 💖</h1>
+      <h1 className = "question">Will you be {name}'s Valentine? 💖</h1>
       <div className="button-container">
         <button
           className="yes-button"
@@ -28,7 +28,7 @@ function ValentinesCard() {
             fontSize: `${16 + noCount * 5}px`, // Increase size
             padding: `${10 + noCount * 2}px ${20 + noCount * 4}px`,
             width: noCount >= 8 ? "100%" : "auto", // Full screen after 8 presses
-            height: noCount >= 8 ? "100vh" : "auto",
+            height: noCount >= 8 ? "80vh" : "auto",
           }}
           onClick={handleYesClick}
         >

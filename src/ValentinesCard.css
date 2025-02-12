@@ -16,15 +16,14 @@
   align-items: center;
 }
 
-h1 {
+.question {
   color: white;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .button-container {
   width: 100%;
-  max-height: 80vh;
   display: flex;
   gap: 15px;
   justify-content: center;
@@ -32,6 +31,7 @@ h1 {
 }
 
 .yes-button {
+  max-height: 85vh;
   background-color: #ff4a6e;
   color: white;
   border: none;

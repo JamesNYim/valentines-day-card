@@ -8,6 +8,7 @@
 }
 
 .flowers-container h1 {
+  margin-top: 50vh;
   position: relative;
   font-family: "Comic Sans MS", cursive, sans-serif;
   z-index: 2;
