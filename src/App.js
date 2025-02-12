@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import CardCreation from "./CardCreation";  // The main page for creating the card
 import ValentinesCard from "./ValentinesCard"; // The interactive Valentine’s card
 import FlowersPage from "./FlowersPage"; // The final flowers animation page

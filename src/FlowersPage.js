@@ -21,7 +21,7 @@ function FlowersPage() {
 
   return (
     <div className="flowers-container">
-      <h1>🌸 Yay! You said Yes! 🌷💖</h1>
+      <h1>Happy Valentines Day &lt;3</h1>
       {flowers.length > 0 ? (
         flowers.map((flower) => (
           <div key={flower.id} className="flower" style={{ left: flower.left }}>

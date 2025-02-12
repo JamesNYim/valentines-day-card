@@ -9,6 +9,7 @@
 
 .flowers-container h1 {
   position: relative;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   z-index: 2;
   color: white;
   margin-top: 20px;
@@ -19,7 +20,7 @@
   bottom: -50px; /* Start 50px below the container */
   font-size: 2rem;
   z-index: 1;
-  animation: rise 5s linear forwards;
+  animation: rise 10s linear forwards;
 }
 
 @keyframes rise {

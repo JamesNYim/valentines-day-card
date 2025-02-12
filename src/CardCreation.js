@@ -8,7 +8,7 @@ function CardCreation() {
 
   const handleGenerate = () => {
     if (name.trim()) {
-      const url = `${window.location.origin}/card?code=${btoa(name)}`;
+      const url = `${window.location.origin}/valentines-day-card/#/card?code=${btoa(name)}`;
       setGeneratedLink(url);
 
       navigator.clipboard.writeText(url).then(() => {
@@ -35,7 +35,7 @@ function CardCreation() {
         <p className="link-container">
           Share this link: <a href={generatedLink} className="link">{generatedLink}</a>
           <br />
-          {copied && <span className="copied-text">✅ Copied!</span>}
+          {copied && <span className="copied-text"> Copied!</span>}
         </p>
       )}
     </div>
