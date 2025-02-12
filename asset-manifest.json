@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/valentines-day-card/static/css/main.9a22f7d0.css",
-    "main.js": "/valentines-day-card/static/js/main.2debbc28.js",
+    "main.js": "/valentines-day-card/static/js/main.f693ec19.js",
     "index.html": "/valentines-day-card/index.html",
     "main.9a22f7d0.css.map": "/valentines-day-card/static/css/main.9a22f7d0.css.map",
-    "main.2debbc28.js.map": "/valentines-day-card/static/js/main.2debbc28.js.map"
+    "main.f693ec19.js.map": "/valentines-day-card/static/js/main.f693ec19.js.map"
   },
   "entrypoints": [
     "static/css/main.9a22f7d0.css",
-    "static/js/main.2debbc28.js"
+    "static/js/main.f693ec19.js"
   ]
 }
