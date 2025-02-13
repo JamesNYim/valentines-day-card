@@ -6,12 +6,18 @@
   overflow: hidden;
 }
 
-.flowers-container .greeting {
-    margin-top: 50vh;
-    width: auto;
-    height: auto;
-    text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+/* Greeting Text */
+.greeting {
+  position: absolute;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  z-index: 2; /* Ensure it's above some flowers */
 }
 
 /* Floating flower emojis */
@@ -21,6 +27,15 @@
   font-size: 2rem;
   animation: floatUp 10s linear forwards;
   opacity: 0;
+}
+
+/* Randomly move flowers behind or in front of text */
+.floating-emoji[z-index="-1"] {
+  z-index: 0; /* Behind the greeting */
+}
+
+.floating-emoji[z-index="1"] {
+  z-index: 3; /* In front of the greeting */
 }
 
 @keyframes floatUp {
@@ -34,6 +49,36 @@
   100% {
     transform: translateY(-120vh) scale(1.2);
     opacity: 0;
+  }
+}
+
+/* Heart button to go back */
+.heart-button {
+  color: red;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 5s; /* Appear after 5 seconds */
+}
+
+.heart-button:hover {
+  transform: translateX(-50%) scale(1.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
