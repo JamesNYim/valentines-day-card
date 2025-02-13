@@ -24,6 +24,7 @@ const Flowers = () => {
 
   return (
     <div className="flowers-container">
+      <h1 className="greeting">Happy Valentine's Day! &lt;3</h1>
       {flowers.map((flower) => (
         <span
           key={flower.id}

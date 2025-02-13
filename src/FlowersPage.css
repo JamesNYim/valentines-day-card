@@ -2,34 +2,37 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /* Ensure flowers don’t go outside the screen */
-  background-color: pink;
-  text-align: center;
+  background: pink;
+  overflow: hidden;
 }
 
-.flowers-container h1 {
-  margin-top: 50vh;
-  position: relative;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  z-index: 2;
-  color: white;
+.flowers-container .greeting {
+    margin-top: 50vh;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.flower {
+/* Floating flower emojis */
+.floating-emoji {
   position: absolute;
-  bottom: -50px; /* Start 50px below the container */
+  bottom: -50px; /* Start slightly below the screen */
   font-size: 2rem;
-  z-index: 1;
-  animation: rise 10s linear forwards;
+  animation: floatUp 10s linear forwards;
+  opacity: 0;
 }
 
-@keyframes rise {
+@keyframes floatUp {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
     opacity: 1;
   }
   100% {
-    transform: translateY(-120vh) rotate(360deg);
+    transform: translateY(-120vh) scale(1.2);
     opacity: 0;
   }
 }
